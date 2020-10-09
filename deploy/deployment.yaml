@@ -20,10 +20,9 @@ spec:
     spec:
       nodeSelector:
         beta.kubernetes.io/os: linux
-
       containers:
       - name: server
-        image: cuttlefacts/cuttlefacts-app # {"$imagepolicy": "default:app-policy"}
+        image: cuttlefacts/cuttlefacts-app:1.0.0 # {"$imagepolicy": "default:app-policy"}
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
