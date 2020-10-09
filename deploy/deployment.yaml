@@ -23,7 +23,7 @@ spec:
 
       containers:
       - name: server
-        image: cuttlefacts/cuttlefacts-app
+        image: cuttlefacts/cuttlefacts-app # {"$imagepolicy": "default:app-policy"}
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
